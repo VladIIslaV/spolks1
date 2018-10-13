@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+    {
+        "label": "build myos",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+            "-o",
+            "myos",
+            "*.cpp",
+            "-m32",
+            "-lboost_system",
+            "-lboost_thread",
+            "-lboost_date_time"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        }
+    }
+]
+}
